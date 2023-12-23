@@ -8,10 +8,27 @@
     color: var(--light-color);
   }
 
+  // &__logo {
+  //   margin-bottom: 40px;
+  // }
+
+  &__nav-list {
+    @include small-tablet  {
+      padding-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
   }
 
   &__touch-text,
@@ -28,6 +45,16 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @include small-tablet {
+      align-items: center;
+    }
+  }
+
+  &__touch {
+    @include small-tablet {
+      order: 5;
+    }
   }
 
   &__payment-list {
@@ -70,6 +97,9 @@
       font-style: normal;
       font-weight: 300;
       line-height: 140%; /* 19.6px */
+      @include small-tablet {
+        display: none;
+      }
     }
 
     & span {
@@ -78,8 +108,41 @@
       font-style: normal;
       font-weight: 300;
       line-height: 140%; /* 19.6px */
+
+      @include small-tablet {
+        order: 3;
+      }
+
+
+
+    }
+
+    @include small-tablet {
+      padding: 40px 0 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
     }
   }
+
+  &__nav-list {
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__bottom-modile--dproxy {
+    display: none;
+    @include small-tablet  {
+      display: inline-flex;
+      order: -1;
+    }
+  }
+
+  //ORDER!!!
+
 
 
 

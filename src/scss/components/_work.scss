@@ -25,6 +25,10 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 30px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__row-head {
@@ -78,6 +82,10 @@
 
     &--2 {
       margin-left: -15px;
+      @include small-tablet {
+        order: 2;
+        margin-left: 0;
+      }
     }
   }
 
@@ -85,6 +93,14 @@
     max-width: none;
     height: initial;
     border-radius: 20px;
+
+    @include small-tablet {
+      border-radius: 35px;
+      border: 6px solid #2F2F2F;
+      width: 201px;
+      height: 436px;
+      // border: 6px solid #2F2F2F;
+    }
   }
 
   &__row-text {

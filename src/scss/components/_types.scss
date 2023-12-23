@@ -15,6 +15,11 @@
     grid-template-columns: repeat(10, 1fr);
     gap: 30px;
 
+    @include mobile {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
   }
 
   &__item {
@@ -24,6 +29,10 @@
     border-radius: 14px;
     background: var(--light-color);
     box-shadow: 0px 0px 15.625px 0px rgba(221, 221, 221, 0.10);
+
+    @include mobile {
+      padding: 30px;
+    }
   }
 
   &__item-top {
