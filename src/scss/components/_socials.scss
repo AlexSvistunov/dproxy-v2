@@ -1,0 +1,10 @@
+.socials {
+
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/telegram.svg');
+    @include bg-cover;
+  }
+}

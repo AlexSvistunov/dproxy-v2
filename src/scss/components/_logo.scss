@@ -1,0 +1,7 @@
+.logo {
+  display: block;
+  width: 92px;
+  height: 31px;
+  background-image: url('../img/logo.svg');
+  @include bg-cover;
+}
