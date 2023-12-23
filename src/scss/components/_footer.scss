@@ -1,0 +1,87 @@
+.footer {
+  background: var(--bg-color);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: var(--light-color);
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__touch-text,
+  &__payment-text {
+    margin: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+  }
+
+  &__touch,
+  &__payment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__payment-list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__payment-item {
+    &--visa {
+      background-image: url('../img/visa.svg');
+      width: 57px;
+      height: 18px;
+    }
+
+    &--mc {
+      background-image: url('../img/mc.svg');
+      width: 30px;
+      height: 18px;
+    }
+
+    &--t{
+      width: 22px;
+      height: 18px;
+      background-image: url('../img/t.svg');
+    }
+    @include bg-cover;
+
+
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 0;
+
+    & small {
+      color: var(--light-color);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 140%; /* 19.6px */
+    }
+
+    & span {
+      color: var(--light-color);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 140%; /* 19.6px */
+    }
+  }
+
+
+
+
+}
