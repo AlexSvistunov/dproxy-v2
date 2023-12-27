@@ -11,9 +11,38 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include mobile {
+      justify-content: start;
+    }
+
   }
 
   &__logo {
+    @include mobile {
+      margin-right: auto;
+    }
+  }
 
+  &__socials {
+    @include mobile {
+      display: none;
+    }
+
+  }
+
+  &__nav {
+    transition: transform 0.35s ease-in-out;
+  }
+}
+
+.burger-menu {
+  display: none;
+  width: 32px;
+  height: 25px;
+  background-image: url('../img/burger.svg');
+  @include bg-cover;
+
+  @include mobile {
+    display: block;
   }
 }

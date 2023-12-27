@@ -109,10 +109,6 @@
       font-weight: 300;
       line-height: 140%; /* 19.6px */
 
-      @include small-tablet {
-        order: 3;
-      }
-
 
 
     }
@@ -124,6 +120,13 @@
       gap: 10px;
 
     }
+  }
+
+  &__nav {
+    @include small-tablet {
+      width: 100%;
+    }
+
   }
 
   &__nav-list {

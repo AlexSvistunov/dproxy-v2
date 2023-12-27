@@ -5,9 +5,22 @@
     </a>
 
     <nav class="nav header__nav" title="header navigation">
-      <ul class="list-reset nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+      <div class="nav-header">
+        <button class="header__btn btn-reset nav-header__btn" aria-label="Закрыть меню"></button>
+        <div class="switch-toggle" aria-checked="false" role="switch">
+          <span class="switch-toggle-border"></span>
+          <div class="switch-toggle-box"></div>
+        </div>
+
+        <div class="socials">
+          <a class="socials__link socials__link--tg" href="#" aria-label="go to telegram"></a>
+        </div>
+
+
+      </div>
+      <ul class="list-reset nav__list header__nav-list">
+        <li class="nav__item"><a href="/" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="faq.html" class="nav__link">FAQ</a></li>
         <li class="nav__item"><a href="#" class="nav__link">API</a></li>
       </ul>
     </nav>
@@ -20,6 +33,11 @@
     <div class="header__socials socials">
       <a class="socials__link socials__link--tg" href="#" aria-label="go to telegram"></a>
     </div>
+
+
+
+    <button class="btn-reset burger-menu" aria-label="Открыть меню" aria-expanded="false" data-burger>
+    </button>
 
 
 

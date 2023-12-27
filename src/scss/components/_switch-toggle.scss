@@ -4,6 +4,7 @@
   position: relative;
   cursor: pointer;
 
+
   &::before {
     position: absolute;
     content: "";
@@ -81,4 +82,9 @@
       z-index: -1;
     }
   }
+
+  @include mobile {
+    margin-right: 30px;
+  }
+
 }
