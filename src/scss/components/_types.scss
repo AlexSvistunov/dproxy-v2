@@ -1,5 +1,6 @@
 .types {
-
+  position: relative;
+  z-index: 2;
 
   &__title {
     margin-bottom: var(--title-offset);

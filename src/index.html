@@ -8,8 +8,10 @@
     @include('partials/header.html')
     <main class="main">
       @include('partials/hero.html')
-      @include('partials/types.html')
-      @include('partials/location.html')
+      <div class="main-wrapper">
+        @include('partials/types.html')
+        @include('partials/location.html')
+      </div>
       @include('partials/work.html')
     </main>
     @include('partials/footer.html')

@@ -1,4 +1,7 @@
 .location {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 80px;
 
 
   &__container {
@@ -14,6 +17,9 @@
   &__inner {
     padding: 50px 20px;
     min-height: 505px;
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0px 0px 15.625px 0px rgba(221, 221, 221, 0.10);
     // background: rgb(235, 222, 222);
   }
 
@@ -36,7 +42,7 @@
     gap: 6px;
     border-radius: 8px;
     padding: 5px 8px;
-    border: 1px solid rgba(1, 22, 36, 0.10);
+    border: 1px solid rgba(1, 22, 36, 0.2);
     background: var(--light-color);
     &.active {
       border-radius: 8px;

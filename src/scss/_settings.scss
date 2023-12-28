@@ -39,9 +39,7 @@ a {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }
 
-.main {
-  flex: 1 0 auto;
-}
+
 
 .is-hidden {
   display: none !important; /* stylelint-disable-line declaration-no-important */
@@ -130,4 +128,41 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+// .main-wrapper {
+//   position: relative;
+//   background-image: url('../img/main-bg.png');
+//   background-color: rgba(211,211,211,0.5);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+// }
+
+.main-wrapper {
+  position: relative;
+}
+
+.main-wrapper::after {
+  position: absolute;
+  background-image: url('../img/main-bg.png');
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+  @include bg-cover;
+}
+
+.main-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(211, 211, 211, 0.5);
+
+
 }
