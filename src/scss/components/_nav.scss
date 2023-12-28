@@ -7,10 +7,8 @@
 
   &__link {
     color: var(--light-color);
-    // transition: background 1s ease-in-out;
 
-    @include hover {
-      // transition: background 1s ease-in-out;
+    &.nav--active {
       background: var(--brand-colod-hover, linear-gradient(47deg, rgba(59, 237, 77, 0.75) -44.41%, #0A6FCC 124.33%));
       background-clip: text;
       -webkit-background-clip: text;

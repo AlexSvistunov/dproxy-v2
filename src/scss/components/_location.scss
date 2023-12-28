@@ -189,6 +189,20 @@
     border-radius: 8px;
     border: 1px solid rgba(1, 22, 36, 0.10);
     margin-top: auto;
+
+    @include hover {
+      border-radius: 8px;
+      border: 1px solid rgba(1, 22, 36, 0.10);
+      background: var(--brand-color, linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%));
+      color: var(--light-color);
+
+      & svg path {
+        fill: white;
+        opacity: 1;
+      }
+
+
+    }
   }
 
 
