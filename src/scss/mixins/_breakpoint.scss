@@ -18,6 +18,13 @@
   }
 }
 
+@mixin additional-tablet {
+  @media (max-width: (804px)) {
+    @content;
+  }
+}
+
+
 @mixin small-tablet {
   @media (max-width: (768px)) {
     @content;
@@ -26,6 +33,12 @@
 
 @mixin mobile {
   @media (max-width: (576px)) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media (max-width: (376px)) {
     @content;
   }
 }
