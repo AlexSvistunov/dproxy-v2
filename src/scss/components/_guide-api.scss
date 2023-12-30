@@ -1,0 +1,214 @@
+.guide-api {
+  min-height: 100vh;
+  background: var(--bg-color);
+  padding: 133px 0 80px;
+  &__container {
+    max-width: 666px;
+  }
+
+  &__title {
+    text-align: center;
+    color: var(--light-color);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 42px */
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__item {
+    color: var(--light-color);
+  }
+
+  &__item-title {
+    color: var(--light-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 42px */
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__box {
+    max-height: 82px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 20px 15px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: max-height 0.35s ease-in-out;
+    &--active {
+      transition: max-height 0.35s ease-in-out;
+    }
+  }
+
+
+}
+
+.guide-box {
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+  &__field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 477px;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
+    margin-right: 10px;
+  }
+
+  &__method {
+    padding: 2px 10px;
+    color: var(--light-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    border-radius: 4px;
+    &--get {
+      background: linear-gradient(47deg, rgba(10, 111, 204, 0.50) -44.41%, rgba(59, 237, 77, 0.38) 124.33%);
+    }
+
+    &--post {
+      background: #0C72C7;
+    }
+  }
+
+  &__token {
+    padding: 2px 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    background: var(--brand-color, linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #0A6FCC;
+  }
+
+  &__btn {
+    padding: 10px 20px;
+    color: var(--light-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    border-radius: 4px;
+    background: var(--brand-color, linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%));
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 40px;
+    background-image: url('../img/dropdown-arrow.svg');
+    @include bg-cover;
+    background-size: initial;
+
+
+
+  }
+}
+
+.guide-content {
+  margin-top: 30px;
+  &__url {
+    color: var(--light-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    margin-bottom: 5px;
+
+    & span {
+      background: var(--brand-color, linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      /* 16 reg */
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+
+  &__header {
+    color: var(--light-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    margin-bottom: 5px;
+    margin-bottom: 30px;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+  }
+
+  &__field {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--dark-color);
+
+    &-reponse {
+      color: var(--light-color);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 22.4px */
+    }
+
+    &-status {
+      color: rgba(255, 255, 255, 0.50);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 22.4px */
+    }
+
+    &-json {
+      color: var(--light-color);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 22.4px */
+      opacity: 0.5;
+    }
+
+
+  }
+
+
+}
