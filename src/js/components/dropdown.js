@@ -9,10 +9,14 @@ dropdowns.forEach(dropdown => {
 
    if(dropdown.classList.contains('dropdown--active')) {
     dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
+    dropdownContent.setAttribute('aria-hidden', false);
+    dropdownBtn.setAttribute('aria-expanded', true);
    } else {
     dropdownContent.style.maxHeight = null;
+    dropdownContent.setAttribute('aria-hidden', true);
+    dropdownBtn.setAttribute('aria-expanded', false);
    }
-   
+
   });
 
 });

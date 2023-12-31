@@ -5,3 +5,4 @@ import './components/menu.js';
 import './components/nav.js';
 import './components/operators.js';
 import './components/api-accordions.js';
+import './components/copyClipBoard.js';

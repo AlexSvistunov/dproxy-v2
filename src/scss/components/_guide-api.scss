@@ -45,8 +45,9 @@
     }
   }
 
-  &__box {
 
+
+  &__box {
     max-height: 82px;
     overflow: hidden;
     cursor: pointer;
@@ -54,13 +55,25 @@
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: max-height 0.35s ease-in-out;
-    &--active {
-      transition: max-height 0.35s ease-in-out;
-    }
+      &--active {
+        transition: max-height 0.35s ease-in-out;
+
+      }
 
     @include mobile {
       padding: 0;
       border: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid green;
+    }
+  }
+
+  &__box.box--active {
+    .guide-box__arrow {
+      transform: rotate(-180deg);
+      transition: transform .35s ease-in-out;
     }
   }
 
@@ -118,6 +131,7 @@
     margin-right: 10px;
     @include mobile {
       padding: 15px 10px;
+      margin-right: 0;
     }
   }
 
@@ -135,6 +149,10 @@
 
     &--post {
       background: #0C72C7;
+    }
+
+    @include mobile {
+      padding: 2px 5px;
     }
   }
 
@@ -168,6 +186,10 @@
 
     }
 
+    @include mobile {
+      padding: 2px 5px;
+    }
+
   }
 
 
@@ -183,6 +205,10 @@
     @include mobile {
       display: none;
     }
+
+    @include hover {
+      background: var(--brand-colod-hover, linear-gradient(47deg, rgba(59, 237, 77, 0.75) -44.41%, #0A6FCC 124.33%));
+    }
   }
 
   &__arrow {
@@ -192,12 +218,19 @@
     width: 42px;
     height: 40px;
     background-image: url('../img/dropdown-arrow.svg');
+    transition: transform .35s ease-in-out;
     @include mobile {
       display: none;
     }
     @include bg-cover;
     background-size: initial
 
+  }
+
+  &__text {
+    @include mobile {
+      font-size: 14px;
+    }
   }
 }
 
