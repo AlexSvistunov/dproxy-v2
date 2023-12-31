@@ -44,6 +44,7 @@
     border-radius: 8px;
     padding: 5px 8px;
     border: 1px solid rgba(1, 22, 36, 0.2);
+    color: var(--dark-color);
     &.active {
       border-radius: 8px;
       border: none;
@@ -239,6 +240,7 @@
     min-height: 38px;
     max-width: 126px;
     width: 100%;
+    color: var(--dark-color);
 
     &--active {
       border-radius: 8px;
