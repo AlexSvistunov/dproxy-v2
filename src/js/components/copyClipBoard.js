@@ -20,7 +20,6 @@ guideBoxBtns.forEach(guideBoxBtn => {
 });
 
 const guideApiContents = document.querySelectorAll('.guide-api__content');
-console.log(guideApiContents);
 
 guideApiContents.forEach(guideApiContent => {
   guideApiContent.addEventListener('click', (e) => {

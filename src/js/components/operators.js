@@ -29,10 +29,6 @@ operatorsBtns.forEach(operatorsBtn => {
 const operatorsBtnsT = document.querySelectorAll('[data-operator-thai]');
 const operatorsContentsT = document.querySelectorAll('.operators-content--thai');
 
-console.log(operatorsBtnsT);
-console.log(operatorsContentsT);
-
-
 
 operatorsBtnsT.forEach(operatorsBtnT => {
   operatorsBtnT.addEventListener('click', (e) => {
