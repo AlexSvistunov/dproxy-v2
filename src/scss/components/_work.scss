@@ -33,7 +33,7 @@
 
   &__row-head {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: var(--light-color);
     font-size: 30px;
     font-style: normal;
@@ -104,6 +104,8 @@
   }
 
   &__row-text {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 10px;
     margin: 0;
     color: var(--light-color);
     font-size: 16px;

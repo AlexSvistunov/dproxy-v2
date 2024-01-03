@@ -1,20 +1,15 @@
 const guideBoxBtns = document.querySelectorAll('.guide-box__btn');
+console.log(guideBoxBtns);
 guideBoxBtns.forEach(guideBoxBtn => {
   guideBoxBtn.addEventListener('click', (e) => {
-    const text = guideBoxBtn.closest('.guide-box__inner').querySelector('.guide-box__field').querySelector('.guide-box__text').textContent;
     e.stopPropagation();
-    var textArea = document.createElement('textarea');
+    const text = guideBoxBtn.closest('.guide-box__inner').querySelector('.guide-box__field').querySelector('.guide-box__text').textContent;
+    let textArea = document.createElement('textarea');
     textArea.value = 'http://api.dproxy.co' + text;
     document.body.appendChild(textArea);
     textArea.select();
-
-    try {
-      document.execCommand('copy');
-      showNotification('Text copied to clipboard', 2000);
-    } catch (err) {
-      console.error('Unable to copy text to clipboard', err);
-    }
-
+    document.execCommand('copy');
+    showNotification('Text copied to clipboard', 2000);
     document.body.removeChild(textArea);
   });
 });
@@ -30,6 +25,7 @@ guideApiContents.forEach(guideApiContent => {
 function showNotification(message, duration) {
   let notification = document.createElement('div');
   notification.innerText = message;
+  notification.style.zIndex = 100;
   notification.style.position = 'fixed';
   notification.style.top = '10px';
   notification.style.right = '10px';
