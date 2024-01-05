@@ -119,6 +119,7 @@
   }
 
   &__descr {
+    font-family: var(--second-family);
     margin: 0;
     margin-bottom: 10px;
     color: var(--dark-color);
@@ -173,7 +174,7 @@
     &--mobile {
       display: none;
       @include additional-tablet {
-        display: block;
+        display: flex;
         align-self: flex-start;
         padding-bottom: 25px;
       }

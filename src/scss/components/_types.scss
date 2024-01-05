@@ -31,6 +31,7 @@
     box-shadow: 0px 0px 15.625px 0px rgba(221, 221, 221, 0.10);
 
     @include mobile {
+      min-height: 300px;
       padding: 30px;
     }
   }

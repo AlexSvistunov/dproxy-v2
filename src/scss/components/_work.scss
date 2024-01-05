@@ -134,8 +134,9 @@
     padding: 19px 30px;
     min-height: 62px;
     background: var(--bg-color);
-    border-radius: 15px;
+    border-radius: 8px;
     display: flex;
+    align-items: center;
     gap: 20px;
     box-shadow: 0px 2.5px 9.375px -3px #004770;
 
@@ -148,7 +149,7 @@
       right: -2px;
       bottom: -2px;
       background: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
-      border-radius: 15px;
+      border-radius: 8px;
       z-index: -1;
 
     }
