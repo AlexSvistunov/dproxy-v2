@@ -3,8 +3,11 @@ const path = window.location.pathname;
 
 navLink.forEach(link => {
   const href = link.getAttribute('href');
-  const comparePath = (path.length === 1) ? path : path.slice(1);
 
+  // Проверка для корневого пути
+  const comparePath = (path === '/' || path === '') ? '/' : path.slice(1);
+
+  // Убедитесь, что href начинается с корневого слеша
   const compareHref = (href === '/') ? href : href.slice(1);
 
   if (compareHref === comparePath) {
