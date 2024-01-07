@@ -227,6 +227,10 @@
       flex-wrap: wrap;
       margin-bottom: 25px;
     }
+
+    @include mobile {
+      gap: 12px;
+    }
   }
 
   &__button {

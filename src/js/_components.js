@@ -6,3 +6,5 @@ import './components/nav.js';
 import './components/operators.js';
 import './components/api-accordions.js';
 import './components/copyClipBoard.js';
+import './components/addBr.js';
+import './components/replaceSymb.js';
