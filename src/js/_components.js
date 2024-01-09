@@ -8,3 +8,4 @@ import './components/api-accordions.js';
 import './components/copyClipBoard.js';
 import './components/addBr.js';
 import './components/replaceSymb.js';
+import './components/imgModals.js';

@@ -123,7 +123,6 @@
     margin: 0;
     margin-bottom: 10px;
     color: var(--dark-color);
-    font-family: Nunito;
     font-size: 13.75px;
     font-style: normal;
     font-weight: 700;
@@ -131,11 +130,11 @@
 
 
     & span {
+      font-family: var(--second-family);
       background: var(--brand-color, linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%));
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      // font-family: Nunito;
       font-size: 13.75px;
       font-style: normal;
       font-weight: 700;
@@ -278,6 +277,16 @@
         width: 100%;
       }
     }
+
+
+    @include mobile {
+      max-width: 127px;
+      &--thai {
+        max-width: 127px;
+        width: 100%;
+      }
+    }
+
   }
 
   &__buttons-img {
@@ -384,6 +393,7 @@
 
     @include small-mobile {
       justify-content: space-between;
+      font-size: 14px;
     }
   }
 

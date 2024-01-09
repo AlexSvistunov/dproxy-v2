@@ -1,5 +1,4 @@
 const guideBoxBtns = document.querySelectorAll('.guide-box__btn');
-console.log(guideBoxBtns);
 guideBoxBtns.forEach(guideBoxBtn => {
   guideBoxBtn.addEventListener('click', (e) => {
     e.stopPropagation();

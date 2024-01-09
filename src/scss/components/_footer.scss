@@ -109,6 +109,14 @@
 
     }
 
+    &-public {
+      color: var(--light-color);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 140%; /* 19.6px */
+    }
+
     @include small-tablet {
       padding: 40px 0 0;
       flex-direction: column;
