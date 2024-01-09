@@ -24,6 +24,7 @@
     line-height: 140%;
     text-transform: uppercase;
 
+
     &-sub {
       display: block;
       font-size: 24px;
@@ -58,7 +59,8 @@
     }
 
     @include mobile {
-      font-size: 42px;
+      font-size: 38px;
     }
+
   }
 }
