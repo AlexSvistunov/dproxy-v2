@@ -99,7 +99,15 @@
       border: 6px solid #2F2F2F;
       width: 201px;
       height: 436px;
+      display: none;
       // border: 6px solid #2F2F2F;
+    }
+
+    &--mobile {
+      display: none;
+      @include small-tablet {
+        display: block;
+      }
     }
   }
 
