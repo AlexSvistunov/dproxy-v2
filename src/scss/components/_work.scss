@@ -96,9 +96,10 @@
 
     @include small-tablet {
       border-radius: 35px;
-      border: 6px solid #2F2F2F;
-      width: 201px;
-      height: 436px;
+      // border: 6px solid #2F2F2F;
+      // width: 350px;
+      // height: 550px;
+      object-fit: contain;
     }
 
   }
