@@ -38,7 +38,7 @@
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 42px */
+    line-height: 140%;
   }
 
   &__row-list {
@@ -62,7 +62,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
   }
 
   &__row-item {
@@ -70,7 +70,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
   }
 
   &__row-info {
@@ -96,9 +96,7 @@
 
     @include small-tablet {
       border-radius: 35px;
-      // border: 6px solid #2F2F2F;
-      // width: 350px;
-      // height: 550px;
+      max-width: 100%;
       object-fit: contain;
     }
 
@@ -180,7 +178,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     background: var(--brand-color, linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%));
     background-clip: text;
     -webkit-background-clip: text;

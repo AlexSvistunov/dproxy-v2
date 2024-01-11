@@ -12,5 +12,3 @@ switchToggles.forEach(switchToggle => {
 
 });
 
-// const toggleElement = document.querySelector('.toggle');
-// const toggleCheckbox = document.querySelector('.toggle-input');

@@ -23,7 +23,6 @@
     @include additional-tablet {
       padding: 30px 12px;
     }
-    // background: rgb(235, 222, 222);
   }
 
   &__buttons {
@@ -112,7 +111,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     @include additional-tablet {
       font-size: 18px;
     }
@@ -126,7 +125,7 @@
     font-size: 13.75px;
     font-style: normal;
     font-weight: 700;
-    line-height: 15.813px; /* 115% */
+    line-height: 15.813px;
 
 
     & span {
@@ -156,7 +155,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 19.6px */
+    line-height: 140%;
     @include additional-tablet {
       margin-bottom: 0;
     }
@@ -307,7 +306,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     border-radius: 8px;
     border: 1px solid rgba(1, 22, 36, 0.10);
     margin-top: auto;

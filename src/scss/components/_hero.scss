@@ -30,7 +30,7 @@
       font-size: 24px;
       font-style: normal;
       font-weight: 700;
-      line-height: 140%; /* 33.6px */
+      line-height: 140%;
       text-transform: uppercase;
       background: var(--brand-color, linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%));
       background-clip: text;
@@ -52,7 +52,7 @@
       font-weight: 500;
       max-width: 527px;
       margin: 0 auto;
-      line-height: 140%; /* 33.6px */
+      line-height: 140%;
       @include mobile {
         font-size: 18px;
       }
