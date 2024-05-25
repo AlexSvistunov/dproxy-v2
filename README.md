@@ -98,11 +98,19 @@ window.onresize = addLineBreakOnResize;
 ```
 <hr>
 
-**Другие репозитории с этим проектом**
+**Другие репозитории, связанные с этим проектом**
+
+Первая версия гитхаб
+https://github.com/AlexSvistunov/dproxy
+
+Первая версия LIVE 
+https://alexsvistunov.github.io/dproxy/
 
 https://github.com/AlexSvistunov/dproxy-v2-refresh-eng
 
 https://github.com/AlexSvistunov/dproxy-v2-refresh
+
+
 
 <hr>
 
