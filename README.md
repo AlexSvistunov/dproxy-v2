@@ -1,47 +1,46 @@
-# **Dproxy - проект мобильных прокси с красивым дизайном и множеством интерактивных элементов. Это полный редизайн первой версии.**
+# **Dproxy - mobile proxy website v2.0.**
+with a beautiful design and lots of interactive elements. This is a complete redesign of the first version
+[View the project LIVE on the customer's ready-made hosting](https://dproxy.co/ru/): https://dproxy.co/ru/
 
-[Посмотреть проект LIVE на готовом хостинге заказчика](https://dproxy.co/ru/): https://dproxy.co/ru/
+[View the project LIVE from my git repository(outdated version, since the customer ordered edits)](https://alexsvistunov.github.io/dproxy-v2/):
 
-[Посмотреть проект LIVE с моего репозитория git(устаревшая версия, так  как заказчик заказывал правки)](https://alexsvistunov.github.io/dproxy-v2/):
-
-## Технологии:
+## Tech stack:
 HTML, SCSS, JS, GULP
 
-
-## Реализованные фичи:
+## Imlemented features:
 
 + Gradient border
 
-+ Переключатель языка
++ Language switcher
 
-+ Мультиязычность(английская и русская версии)
++ Multilanguage implementation(eng and ru versions)
 
-+ Табы с переключением контента
++ Tabs with content switching
 
-+ Табы в табах
++ Tabs in tabs
 
-+ Копирование в буфер обмена и alert об этом
++ Copy to clipboard and custom alert
 
-+ Бургер-меню
++ Burger menu
 
-+ Просмотр фотографий(небольшая галерея, но без прокрутки, как модалаьное окно)
-Скачивание файла публичной офферты
++ Gallery
 
-
-
-## Проблемы, с которыми столкнулся:
-
-В CSS нет реализации стилизации градиентных границ
-
-Мультиязычность сайта
-
-Адаптивный перенос строки с br
++ Downloading public offertory file
 
 
-## Решение проблем:
-+ Проблему градиентных границ решил при помощи абсолютного позиционирования псевдоэлементов и z-index
+## Problems faced:
+
++ There is no implementation of gradient border styling in CSS
+
++ Multilingualism of the website
+
++ Adaptive line break with br
+
+
+## Problem solving:
++ The problem of gradient borders was solved by absolute positioning of pseudo elements and z-index
 ```html
-<!-- На примере кнопки написать перейти в телеграм -->
+<!-- Using the example of the button (go on telegram button) -->
 
 .work__link {
     position: relative;
@@ -72,14 +71,14 @@ HTML, SCSS, JS, GULP
     z-index: -1;
 }
 
-<!-- Прошу обратить внимание на z-index: -1, он обязателен -->
+<!-- Please pay attention to z-index: -1, it is required -->
 
 ```
 
-+ Мультиязычность была решена при помощи двух разных url /eng, /ru. 
-То есть когда нажимается toggle смены языка, пользователь заходит на другую директорию
++ Multilingualism was solved by using two different url /eng, /ru. 
+That is, when the toggle to change language is pressed, the user goes to another directory
 
-+ Перенос определенного текста был решен с помощью br, но суть в том, что br не адаптируется. Пришлось адаптировать через JS =)
++ Transferring of text was solved with br, but the point is that br doesn't adapt. I had to adapt via JS =)
 
 ```JS
 function addLineBreakOnResize() {
@@ -98,22 +97,17 @@ window.onresize = addLineBreakOnResize;
 ```
 <hr>
 
-**Другие репозитории, связанные с этим проектом**
+**Other repositories related to this project**
 
-Первая версия гитхаб
+The first version dproxy v1.0 github
 https://github.com/AlexSvistunov/dproxy
 
-Первая версия LIVE 
+The first version (live)
 https://alexsvistunov.github.io/dproxy/
-
-https://github.com/AlexSvistunov/dproxy-v2-refresh-eng
-
-https://github.com/AlexSvistunov/dproxy-v2-refresh
-
 
 
 <hr>
 
-### Автор: Alex Svistunov
+### Author: Alex Svistunov
 
 
